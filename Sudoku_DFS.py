@@ -88,6 +88,7 @@ class Node:
     def expand(self, problem):
         return [Node(state) for state in problem.actions(self.state)]
 
+#fungsi DFS
 def DFS(problem):
     start = Node(problem.initial)
     if problem.goal_test(start.state):
@@ -104,18 +105,24 @@ def DFS(problem):
 
     return None
 
+#fungsi solusi
 def solve(board):
     print ("\nSolving...")
     problem = Problem(board)
     # Mencegah memasukan board sudoku yang tidak 6x6
     if int(problem.type/3) == 2:
         solution = DFS(problem)
-
+        
+        #output ketika memiliki solusi
         if solution:
             print ("Solusi ditemukan.\nSolusi:")
             for row in solution:
                 print (row)
+                
+        #output ketika tidak memiliki Solusi
         else:
             print ("Solusi tidak ditemukan.")
+            
+    #output ketika sudoku tidak 6x6
     else:
         print ("Board tidak 6x6.")
