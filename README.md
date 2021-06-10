@@ -1,9 +1,9 @@
 ### Quiz 2 DAA (D) Sudoku6x6-DFS
 # HOW IT WORKS
 
-## Elemen-elemen penting
+## Core Elements
 
-Agar lebih mudah dipahami, kami akan memvisualisasikan algoritmanya melalui gambar berikut :
+To make it easier to understand, we will visualize the algorithm through the following image:
 ![Visualisasi 1](https://user-images.githubusercontent.com/57068224/121516669-b0d97800-ca18-11eb-9e29-e47e7e8cae12.png)
 
 Dalam program ini terdapat 2 elemen inti. **Elemen pertama disimbolkan oleh graph** yang berarti **probabilitas gerakan-gerakan yang bisa dilakukan dalam sudoku**.
