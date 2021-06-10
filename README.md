@@ -6,15 +6,15 @@
 To make it easier to understand, we will visualize the algorithm through the following image:
 ![Visualisasi 1](https://user-images.githubusercontent.com/57068224/121516669-b0d97800-ca18-11eb-9e29-e47e7e8cae12.png)
 
-Dalam program ini terdapat 2 elemen inti. **Elemen pertama disimbolkan oleh graph** yang berarti **probabilitas gerakan-gerakan yang bisa dilakukan dalam sudoku**.
-Gerakan-gerakan tersebut juga dibedakan dengan **warna hijau yang berarti gerakan valid dan oranye yang berarti tidak Valid**. **Elemen Kedua adalah stack** yang bertugas untuk
-**menyimpan pergerakan-pergerakan sehingga mudah untuk backtracking**.
+In this program there are 2 core elements. **The first element is symbolized by graph** which means **probability of moves that can be done in sudoku**.
+These movements are also distinguished by **green color which means valid movement and orange which means invalid**. **Second Element is the stack** which is in charge of
+**save movements so it's easy for backtracking**.
 
-## Langkah-langkah program
+## Program Steps
 
-1. Program akan menelusuri probabilitas-probabilitas pergerakan memungkinkan yang dipetakan menjadi Graph. Selain itu, pergerakan-pergerakannya disimpan ke stack.
+1. The program will trace the probabilities of possible movements which are mapped into a Graph. In addition, the moves are saved to the stack.
 ![Visualisasi 2](https://user-images.githubusercontent.com/57068224/121516684-b5059580-ca18-11eb-93df-8ba7133e0269.png)
-2. Dikarenakan program ini menggunakan algoritma DFS sehingga pergerakan selanjutnya adalah mencari anak dari parent B. C dimasukkan kedalam Stack.
+2. Because this program uses the DFS algorithm, the next move is to find the child of parent B. C is inserted into the Stack.
 ![Visualisasi 3](https://user-images.githubusercontent.com/57068224/121516894-f138f600-ca18-11eb-9186-cf0836ed8563.png)
 3. Since C is invalid, the program performs backtracking assisted by the stack. In the stack, C is removed so that the program will look for another child of B other than 
 ![Visualisasi 4](https://user-images.githubusercontent.com/57068224/121516905-f39b5000-ca18-11eb-81f0-117f707d6604.png)
