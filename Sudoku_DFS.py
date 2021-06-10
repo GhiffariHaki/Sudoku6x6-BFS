@@ -66,8 +66,9 @@ class Problem(object):
             for block_column in range(0,3):
                 in_block.append(state[row_start + block_row][column_start + block_column])
         options = self.filter_values(options, in_block)
-        return options    
-
+        return options
+    
+    #eksekusi
     def actions(self, state):
         row,column = self.get_spot(self.type, state)
 
