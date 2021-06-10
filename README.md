@@ -1,7 +1,4 @@
 ### Quiz 2 DAA (D) Sudoku6x6-DFS
-
-Inspired by : https://www.youtube.com/watch?v=04XaG45ehG0
-
 # HOW IT WORKS
 
 ## Elemen-elemen penting
